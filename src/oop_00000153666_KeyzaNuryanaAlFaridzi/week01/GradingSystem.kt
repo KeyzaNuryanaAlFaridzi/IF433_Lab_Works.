@@ -8,6 +8,9 @@ fun main() {
     println ("name:" + name + ", nilai :" + score )
 }
 
+// Tulis DI LUAR main()
+fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
+
 fun main(){
     val name = "keyza"
     val score = 80
@@ -23,3 +26,6 @@ val grade = when (score) {
     else > "D"
 }
 println("Grade kamu: $grade")
+
+// Panggil DI DALAM main()
+println("Status: ${calculateStatus(score)}")
