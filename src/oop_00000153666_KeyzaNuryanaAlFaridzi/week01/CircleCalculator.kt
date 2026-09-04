@@ -6,17 +6,18 @@ fun main (args: Array<String>){
     var pi: Double = 3.14
 
 // Calculation
-    var area: Double * = radius pi * radius
+    var area: Double = pi * radius * radius
 }
 
 // Output Concatenation
-println("Radius: + radius + Area: 11 + area)
+println("Radius: " + radius + ", Area: " + area)
 // Logic check
-checkSize (area)
+checksize (area)
 }
-fun checkSize(area: Double) {
+fun checksize(area: Double) {
     if (area > 100) {
         println("This is a Big Circle")
     } else {
+        println("This is a Small Circle")
     }
-    println("This is a Small Circle")
+}
