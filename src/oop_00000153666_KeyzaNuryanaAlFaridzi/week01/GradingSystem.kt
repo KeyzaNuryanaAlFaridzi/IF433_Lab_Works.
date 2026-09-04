@@ -14,3 +14,12 @@ fun main(){
 
     println("nama: $name, nilai: $score")
 }
+
+// Tambahkan di bawah println www
+val grade = when (score) {
+    in 90 ≤ .. ≤ 100 -> "A"
+    in 80 ≤ .. ≤ 89 -> "B"
+    in 70 ≤ .. ≤ 79 -> "c"
+    else > "D"
+}
+println("Grade kamu: $grade")
