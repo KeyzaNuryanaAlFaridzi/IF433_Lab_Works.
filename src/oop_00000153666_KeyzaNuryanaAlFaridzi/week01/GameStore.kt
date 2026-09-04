@@ -27,6 +27,26 @@ fun printReceipt(title: String, finalPrice: Int) {
     println("Harga Akhir: Rp $finalPrice")
 }
 
+fun main() {
+    val gameTitle = "streakw"
+    val price = 500000
 
+    val discount = calculateDiscount(price)
+    val finalPrice = price - (price * discount / 100)
+
+    val userNote: String? = null
+
+    printReceipt(title = gameTitle, finalPrice = finalPrice, note = userNote)
+}
+
+fun calculateDiscount(price: Int): Int = if (price > 500000) 20 else 10
+
+fun printReceipt(title: String, finalPrice: Int, note: String?) {
+    println("=== STRUK STEAMKW ===")
+    println("Judul Game : $title")
+    println("Harga Akhir: Rp $finalPrice")
+
+    println("Catatan    : ${note ?: "Tidak ada catatan"}")
+}
 
 
