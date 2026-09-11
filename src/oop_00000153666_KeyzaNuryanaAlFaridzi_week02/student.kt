@@ -1,8 +1,8 @@
-package oop_001_johnthor.week02
+package oop_00000153666_KeyzaNuryanaAlFaridzi_week02
 
 import java.util.Scanner
 
-class Student(
+class studeny(
     val name: String,
     val nim: String,
     var major: String
@@ -32,13 +32,13 @@ fun main() {
         print("Masukkan Jurusan: ")
         val major = scanner.nextLine()
 
-        val s1 = Student(name, nim, major)
+        val s1 = Student(name, nim, 0.0, major)
         println("Status: Pendaftaran Selesai.")
     }
 }
 
 
-class Student(
+class student(
     val name: String,
     val nim: String,
     var major: String
@@ -65,6 +65,7 @@ class Student(
     var gpa: Double = 0.0, // <-- Default Argument
     var major: String
 ) {
+    constructor(name: String, nim: String, gpa: Double) : this(name, nim, gpa, "Belum Memilih")
 
 
 }
