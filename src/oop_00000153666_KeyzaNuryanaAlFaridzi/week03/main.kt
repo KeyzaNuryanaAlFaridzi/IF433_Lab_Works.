@@ -1,6 +1,6 @@
 package oop_00000153666_KeyzaNuryanaAlFaridzi.week03
 
-import oop_0000015366_KeyzaNuryanaAlFaridzi.week03.Weapon
+import oop_00000153666_KeyzaNuryanaAlFaridzi.week03.Weapon
 
 fun main() {
     val e = Employee("Budi")
@@ -20,5 +20,8 @@ fun main() {
     sword.damage = 9999
     println("Damage: ${sword.damage}, Tier: ${sword.tier}")
 
-
+    val player = Player("JohnThor")
+    player.addXp(50)
+    player.addXp(60)
+    println("Level akhir: ${player.level}")
 }
