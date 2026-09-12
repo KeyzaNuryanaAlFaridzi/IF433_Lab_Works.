@@ -1,4 +1,4 @@
-package oop_00000153666_KeyzaNuryanaAlFaridzi_week02
+package oop_00000153666_KeyzaNuryanaAlFaridzi.oop_00000153666_KeyzaNuryanaAlFaridzi_week02
 
 import java.util.Scanner
 
