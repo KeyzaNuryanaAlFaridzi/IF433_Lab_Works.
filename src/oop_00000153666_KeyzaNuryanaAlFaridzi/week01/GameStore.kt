@@ -1,52 +1,22 @@
-package oop_00000153666_KeyzaNuryanaAlFaridzi.week01
-
-fun main(){
-    val gametitle: string = "streakw"
-    val price: int = "600000"
-
-    val discount = calculateDiscount (price)
-    val finalprice = price -(price * discount / 100)
-}
-
-fun  calculateDiscount(price :int): int = if (price > 500000) 20 else 10
-
-fun main(){
-    val gametitile = "streak"
-    val price = 600000
-
-    val discount = calculateDiscount(price)
-    val finalPrice = price - (price * discount / 100)
-
-    printReceipt(title = gameTitle, finalPrice = finalPrice)
-}
-
-fun calculateDiscount(price: Int): Int = if (price > 500000) 20 else 10
-
-fun printReceipt(title: String, finalPrice: Int) {
-    println("Game: $title")
-    println("Harga Akhir: Rp $finalPrice")
-}
+package oop_0000015366_KeyzaNuryanaAlFaridzi.week01
 
 fun main() {
-    val gameTitle = "streakw"
-    val price = 500000
-
-    val discount = calculateDiscount(price)
-    val finalPrice = price - (price * discount / 100)
-
+    val title = "Cyberpunk 2077"
+    val price = 600000
     val userNote: String? = null
 
-    printReceipt(title = gameTitle, finalPrice = finalPrice, note = userNote)
+    val finalPrice = calculateDiscount(price)
+
+    printReceipt(title = title, finalPrice = finalPrice)
+
+    val noteText = userNote ?: "Tidak ada catatan"
+    println("Catatan: $noteText")
 }
 
-fun calculateDiscount(price: Int): Int = if (price > 500000) 20 else 10
+fun calculateDiscount(price: Int) = if (price > 500000) (price * 0.8).toInt() else (price * 0.9).toInt()
 
-fun printReceipt(title: String, finalPrice: Int, note: String?) {
-    println("=== STRUK STEAMKW ===")
-    println("Judul Game : $title")
+fun printReceipt(title: String, finalPrice: Int) {
+    println("=== STRUK PEMBELIAN STEAMKW ===")
+    println("Judul Game: $title")
     println("Harga Akhir: Rp $finalPrice")
-
-    println("Catatan    : ${note ?: "Tidak ada catatan"}")
 }
-
-

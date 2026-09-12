@@ -1,6 +1,13 @@
-package oop_00000153666_KeyzaNuryanaAlFaridzi.oop_00000153666_KeyzaNuryanaAlFaridzi_Week03
+package oop_00000153666_KeyzaNuryanaAlFaridzi.week03
 
 class Employee(val name: String) {
     var salary: Int = 0
- }
-
+        set(value) {
+            if (value < 0) {
+                println("ERROR: Gaji tidak boleh negatif! Di-set ke 0.")
+                field = 0 // Gunakan field, bukan this.salary
+            } else {
+                field = value // Gunakan field untuk assign nilai asli
+            }
+        }
+}

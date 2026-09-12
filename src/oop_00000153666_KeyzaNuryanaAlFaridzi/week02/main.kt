@@ -1,6 +1,6 @@
 package oop_001_johnthor.week02
 
-import oop_00000153666_KeyzaNuryanaAlFaridzi.oop_00000153666_KeyzaNuryanaAlFaridzi_week02.student
+import oop_00000153666_KeyzaNuryanaAlFaridzi.week02.student
 import java.util.Scanner
 
 fun main() {
