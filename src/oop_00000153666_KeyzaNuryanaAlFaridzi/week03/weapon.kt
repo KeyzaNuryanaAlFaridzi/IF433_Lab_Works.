@@ -1,4 +1,4 @@
-package oop_0000015366_KeyzaNuryanaAlFaridzi.week03
+package oop_00000153666_KeyzaNuryanaAlFaridzi.week03
 
 class Weapon(val name: String) {
     var damage: Int = 0
