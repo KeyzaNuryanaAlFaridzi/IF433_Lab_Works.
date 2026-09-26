@@ -41,4 +41,18 @@ fun main() {
     for (payment in listPembayaran) {
         payment.processPayment(75000.0)
     }
+
+    println("\n=== TUGAS 2: SMART CASTING RECOVERY ===")
+    for (payment in listPembayaran) {
+        payment.processPayment(75000.0)
+
+        // Smart Casting Challenge
+        if (payment is EWallet) {
+            println("-> Mendeteksi EWallet, mencoba Top Up otomatis...")
+            payment.topUp(50000.0)
+            println("-> Mencoba pembayaran ulang setelah Top Up:")
+            payment.processPayment(75000.0)
+        }
+        println("----------------------------------------")
+    }
 }
