@@ -30,5 +30,13 @@ fun main() {
     val button = Button("Login")
     button.click()
 
+    val hub = SmartHomeHub()
+
+    hub.addDevice(lamp)
+    hub.addDevice(speaker)
+    hub.addDevice(cctv)
+
+    hub.activateSecurityMode()
+    hub.turnOffAllSwitches()
 
 }
