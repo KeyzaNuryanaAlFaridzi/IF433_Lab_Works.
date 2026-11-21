@@ -25,7 +25,7 @@ fun main() {
 
     val smartphone = Smartphone()
     smartphone.turnOn()
-    smartphone.turnOnCamera()
+    smartphone.turnOn()
 
     val button = Button("Login")
     button.click()
