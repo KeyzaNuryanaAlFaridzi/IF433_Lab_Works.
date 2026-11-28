@@ -40,8 +40,6 @@ fun main() {
     worstPerformersString.forEach { println(it) }
     println("Unique Pairs: $uniquePairs")
 
-    package oop_00000153666_keyza.week09
-
     fun main() {
         val tradeHistory = listOf(
             TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
