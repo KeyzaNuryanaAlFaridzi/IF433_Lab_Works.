@@ -29,4 +29,8 @@ fun main() {
             val sign = if (it.roe > 0) "+" else ""
             "LOSS [${it.pair} ${it.position}]: $sign${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
+
+    val uniquePairs = tradeHistory
+        .map { it.pair }
+        .toSet()
 }
